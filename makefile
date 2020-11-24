@@ -1,11 +1,11 @@
-difference_of_squares: difference_of_squares.o 
-	g++ -o difference_of_squares difference_of_squares.o
+string_statistics: string_statistics.o
+	g++ -o string_statistics string_statistics.o 
 
-difference_of_squares.o: difference_of_squares.cc
-	g++ -c difference_of_squares.cc
+string_statistics.o: string_statistics.cc 
+	g++ -c string_statistics.cc 
 
 clear:
-	rm *.o 
+	rm *.o
 
-clear1: 
-	rm difference_of_squares
+clearall:
+	rm string_statistics
