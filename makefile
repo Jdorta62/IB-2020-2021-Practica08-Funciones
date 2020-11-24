@@ -1,11 +1,11 @@
-primes: primes.o
-	g++ -o primes primes.o
+difference_of_squares: difference_of_squares.o 
+	g++ -o difference_of_squares difference_of_squares.o
 
-prime.o:primes.cc
-	g++ -c primes.cc
+difference_of_squares.o: difference_of_squares.cc
+	g++ -c difference_of_squares.cc
 
-clear: 
-	rm *.o
+clear:
+	rm *.o 
 
-clear1:
-	rm primes
+clear1: 
+	rm difference_of_squares
